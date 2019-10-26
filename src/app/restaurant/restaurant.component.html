@@ -2,11 +2,14 @@
 <div *ngFor="let result of results">
     <h2>{{result.name}}</h2>
       <p>
+          <img src= "https://maps.googleapis.com/maps/api/place/photo?maxwidth=200&photo_reference={{result.photos[0].photo_reference}}&key=AIzaSyCQxrCycy69Nm24iI3nXOfLRNNXLyHfs5Y"
+          alt="No img">
+      <br>
+        Ratings: 
         {{result.rating}}
       </p>
       <div>
         <a [routerLink]="['/restaurantpage']" routerLinkActive="router-link-active" class="btn btn-primary"
         (click)="viewPage(result)">View Profile</a>
     </div>
-      <!--<img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference={{result.photos[0].photo_reference}}&key=AIzaSyBf817FqdYRjed-pJcVf04e_Z1h3I7BIOE">"-->
   </div>
