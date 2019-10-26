@@ -1,0 +1,7 @@
+<p>restaurantpage works!</p>
+<h2>{{currentRestaurant.name}}</h2>
+    <img src= "https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photo_reference={{currentRestaurant.photos[0].photo_reference}}&key=AIzaSyDiWkBCSNh9EEm-FBSvnxvb5HGj4DTwOWs"
+    alt="No img">
+    <p>{{currentRestaurant.formatted_address}}</p>
+    <a [routerLink]="['/']" routerLinkActive="router-link-active" class="btn btn-primary"
+    (click)="backtoSearch()">Back to Search</a>
