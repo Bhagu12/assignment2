@@ -14,3 +14,16 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+
+//-----------changes
+
+// const routes: Routes = [
+//   {path:'place/:loc', component: RestaurantComponent},
+//   {path:'param-component', component: RestaurantpageComponent}
+// ];
+
+// @NgModule({
+//   imports: [RouterModule.forRoot(routes)],
+//   exports: [RouterModule]
+// })
+// export class AppRoutingModule { }

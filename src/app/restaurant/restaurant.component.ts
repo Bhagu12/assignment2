@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { RestaurantService } from '../restaurant.service';
+import { Subscription } from 'rxjs';
+import { AppComponent } from '../app.component';
 
 @Component({
   selector: 'app-restaurant',
@@ -9,7 +11,7 @@ import { RestaurantService } from '../restaurant.service';
 export class RestaurantComponent implements OnInit {
   currentRestaurant: any;
   results;
-  constructor(private apiService: RestaurantService) { }
+  constructor(private appcom:AppComponent, private apiService: RestaurantService) { }
   showPage: boolean;
   ngOnInit() {
     this.apiService.getRestaurant().subscribe((data)=>{
@@ -30,3 +32,4 @@ export class RestaurantComponent implements OnInit {
 
 
 }
+
