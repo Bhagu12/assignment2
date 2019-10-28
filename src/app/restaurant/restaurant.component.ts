@@ -25,10 +25,10 @@ export class RestaurantComponent implements OnInit {
     this.currentRestaurant=restaurant;
     this.apiService.setRestaurant(restaurant);
   }
-  backtoSearch()
-  {
-    this.showPage=false;
-  }
+  // backtoSearch()
+  // {
+  //   this.showPage=false;
+  // }
 
 
 }
